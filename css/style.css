@@ -360,6 +360,8 @@ header nav .head-navlinks .price-offer {
     font-size: 13px;
     transition: 500ms background ease;
     white-space: nowrap;
+    font-weight: 700;
+    letter-spacing: .5px;
     margin-left: 15px;
 }
 
@@ -431,7 +433,7 @@ header nav .head-navlinks .price-offer:hover {
     width: 100%;
     z-index: 2;
     background: rgba(0, 0, 0, 0.61);
-    opacity: 0.77;
+    /* opacity: 0.77; */
 }
 
 .head-slider .sliderSlick .box-part.slick-active .slide-txt span {
@@ -691,7 +693,7 @@ header nav .head-navlinks .price-offer:hover {
 }
 
 .about-video:hover::after {
-    background: #d3af68;
+    background: #4c85d49e;
     width: 100%;
     height: 100%;
 }
@@ -978,7 +980,7 @@ header nav .head-navlinks .price-offer:hover {
 .product-img {
     position: relative;
     overflow: hidden;
-    height: 200px;
+    height: 300px;
 }
 
 .product-img img {
@@ -1091,11 +1093,11 @@ header nav .head-navlinks .price-offer:hover {
     display: inline-block;
     padding: 0.75rem 1.8rem;
     font-size: 1rem;
-    background: transparent;
+    background: #4c85d4;
     border: 2px solid #4c85d4;
-    color: #000;
+    color: #fff;
     font-weight: 700;
-    border-radius: 30px;
+    border-radius: 0;
     cursor: pointer;
     transition: all 0.4s ease;
     width: fit-content;
@@ -1330,6 +1332,193 @@ header nav .head-navlinks .price-offer:hover {
     transition-delay: 0.1s;
 }
 
+/* projects end */
+
+/* blogs */
+
+#blogs {
+    padding: 3rem 0;
+}
+
+.projectWrap {
+    width: 100%;
+    float: left;
+    /*padding:100% 0 0 0;*/
+    height: 300px;
+    position: relative;
+}
+
+.projectWrap .inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*padding:10px;*/
+    overflow: hidden;
+}
+
+.projectWrap .inner .project {
+    width: 100%;
+    height: 100%;
+    float: left;
+    /*background:#fff;*/
+    border-radius: 5px;
+    /*box-shadow:0px 2px 4px 1px rgba(56,72,84,0.1);*/
+    /*padding:10px;*/
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectWrap .inner .project .innerWrap {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1px;
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+}
+
+.projectWrap .inner .project .innerWrap .image {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+    border-radius: 1px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    filter: brightness(.7);
+    transition: transform 0.3s ease;
+}
+
+.project:hover .image {
+    filter: brightness(1);
+}
+
+.projectWrap .inner .project .innerWrap .image:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 1px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: #4c85d42f;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.projectWrap .inner .project .innerWrap .metaWrap {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0 10px 10px;
+    /*transform:translate3d(0px,20px,0px);*/
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.projectWrap .inner .project .innerWrap .meta {
+    width: 100%;
+    height: 100%;
+    /*background:rgba(255,255,255,1.0);*/
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.projectWrap .inner .project:hover {
+    transform: translate3d(0px, -5px, 0px);
+    /* box-shadow: 0px 5px 8px 3px rgba(56, 72, 84, 0.2); */
+}
+
+.projectWrap .inner .project:hover .image {
+    transform: scale(1);
+}
+
+.projectWrap .inner .project:hover .image:before {
+    opacity: 1;
+}
+
+.projectWrap .inner .project:hover .metaWrap {
+    transform: translate3d(0px, -30px, 0px);
+    opacity: 1;
+}
+
+.projectWrap .inner .project:hover .meta h5 {
+    transform: scale(1);
+}
+
+.meta h5 {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+
+.project-card {
+    height: 310px;
+    position: relative;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+.project-content {
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    transition: .6s all ease;
+    border-top-right-radius: .3rem;
+    /*border-bottom-right-radius: .3rem;*/
+    width: 75%;
+    min-height: 105px;
+    justify-content: center;
+}
+
+.project-content h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.project-content p {
+    color: #626262;
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+}
+
+.project-card:hover .project-content {
+    bottom: 1rem;
+    left: 1rem;
+    border-radius: .3rem;
+}
+
+/* blogs end */
+
 /* cta */
 
 .cta-section {
@@ -1556,6 +1745,10 @@ header nav .head-navlinks .price-offer:hover {
     background-color: #fff;
     box-shadow: 0px 0px 4px #00000027;
     transition: 0.3s;
+}
+
+.social-button.mail {
+    background-color: #78ff01;
 }
 
 .social-button:hover {

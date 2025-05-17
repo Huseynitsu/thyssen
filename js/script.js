@@ -66,7 +66,7 @@ $(document).ready(function () {
                 spaceBetween: 40,
             },
             1024: {
-                slidesPerView: 4.2,
+                slidesPerView: 3.2,
                 spaceBetween: 30,
             },
         },
