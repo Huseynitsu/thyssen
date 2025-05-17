@@ -10,24 +10,24 @@ $(document).ready(function () {
         $(".mobile_btn").toggleClass("opened");
     });
 
-    const colorArray = [
-        '#A8D5BA', // Soft green (bitki tonu)
-        '#DCEFD8', // Pale mint (təzə hava hissi)
-        '#F3E9DC', // Cream beige (ağac, mebel tonu)
-        '#B0C4B1', // Grey green (daş, beton hissi)
-        '#E6D5B8', // Light wood tone
-        '#C8D5B9', // Pastel green
-        '#EAE4E9', // Soft white pink
-        '#D4A373', // Rustic brown
-        '#ADC2A9', // Olive-grey mix
-        '#C2B280'  // Natural earth (torpaq)
-    ];
+    // const colorArray = [
+    //     '#A8D5BA', // Soft green (bitki tonu)
+    //     '#DCEFD8', // Pale mint (təzə hava hissi)
+    //     '#F3E9DC', // Cream beige (ağac, mebel tonu)
+    //     '#B0C4B1', // Grey green (daş, beton hissi)
+    //     '#E6D5B8', // Light wood tone
+    //     '#C8D5B9', // Pastel green
+    //     '#EAE4E9', // Soft white pink
+    //     '#D4A373', // Rustic brown
+    //     '#ADC2A9', // Olive-grey mix
+    //     '#C2B280'  // Natural earth (torpaq)
+    // ];
 
-    // Bütün .card__bx div-lərinə random rəng ver
-    document.querySelectorAll('.service_cards .card__bx').forEach(card => {
-        const randomColor = colorArray[Math.floor(Math.random() * colorArray.length)];
-        card.style.setProperty('--clr', randomColor);
-    });
+    // // Bütün .card__bx div-lərinə random rəng ver
+    // document.querySelectorAll('.service_cards .card__bx').forEach(card => {
+    //     const randomColor = colorArray[Math.floor(Math.random() * colorArray.length)];
+    //     card.style.setProperty('--clr', randomColor);
+    // });
 
     $(".head-slider .sliderSlick").slick({
         dots: false,

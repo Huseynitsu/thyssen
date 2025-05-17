@@ -691,7 +691,7 @@ header nav .head-navlinks .price-offer:hover {
 }
 
 .about-video:hover::after {
-    background: #4c85d4;
+    background: #d3af68;
     width: 100%;
     height: 100%;
 }
@@ -1033,13 +1033,13 @@ header nav .head-navlinks .price-offer:hover {
 }
 
 .btn.view {
-    background-color: #dcefd8;
-    color: #2e4d2e;
+    background-color: #b0adad;
+    color: #000;
 }
 
 .btn.cart {
-    background-color: #a8d5ba;
-    color: #23482f;
+    background-color: #4c85d4;
+    color: #fff;
 }
 
 .btn.view:hover {
@@ -1073,13 +1073,11 @@ header nav .head-navlinks .price-offer:hover {
 }
 
 .dealer-text h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
     line-height: 1.2;
-    font-weight: 600;
-    background: linear-gradient(to right, #000000, #00ff0c);
+    font-weight: 800;
     -webkit-background-clip: text;
-    color: transparent;
 }
 
 .dealer-text p {
@@ -1094,7 +1092,7 @@ header nav .head-navlinks .price-offer:hover {
     padding: 0.75rem 1.8rem;
     font-size: 1rem;
     background: transparent;
-    border: 2px solid #000;
+    border: 2px solid #4c85d4;
     color: #000;
     font-weight: 700;
     border-radius: 30px;
@@ -1384,12 +1382,11 @@ header nav .head-navlinks .price-offer:hover {
 }
 
 .cta-form button {
-    background: linear-gradient(135deg, #00ffe1, #4c85d4);
-    color: #000;
+    background-color: rgb(76, 133, 212);
+    color: #fff;
     font-weight: bold;
     padding: 0.9rem 1.2rem;
     border: none;
-    border-radius: 30px;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1530,7 +1527,7 @@ header nav .head-navlinks .price-offer:hover {
 /* From Uiverse.io by aadium */
 .social-buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     /* background-color: #f2f2f2;
     box-shadow: 0px 0px 15px #00000027; */
@@ -1575,7 +1572,7 @@ header nav .head-navlinks .price-offer:hover {
 }
 
 .github {
-    background-color: #333;
+    background-color: #FF0000;
 }
 
 .github svg {
