@@ -1748,7 +1748,11 @@ header nav .head-navlinks .price-offer:hover {
 }
 
 .social-button.mail {
-    background-color: #78ff01;
+    background-color: #fff;
+}
+
+.social-button.mail svg {
+    fill: #FF0000;
 }
 
 .social-button:hover {
@@ -1774,7 +1778,7 @@ header nav .head-navlinks .price-offer:hover {
 }
 
 .github {
-    background-color: #FF0000;
+    background-color: #128c7e;
 }
 
 .github svg {
