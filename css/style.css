@@ -1296,6 +1296,15 @@ header nav .head-navlinks .price-offer:hover {
     border-radius: 100%;
     background-color: white;
     color: var(--defaultBackground);
+    transition: .5s all ease;
+}
+
+.options .option.active .label .icon {
+    min-width: 120px;
+    height: 45px;
+    border-radius: 0;
+    border-bottom-left-radius: 20px;
+    padding: 8px;
 }
 
 .options .option .label .info {
