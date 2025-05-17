@@ -1862,6 +1862,10 @@ header nav .head-navlinks .price-offer:hover {
 
 @media (max-width: 768px) {
 
+    .footer-logo p {
+        max-width: 100%;
+    }
+
     .logo img {
         width: 180px;
     }
