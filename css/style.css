@@ -1619,7 +1619,7 @@ header nav .head-navlinks .price-offer:hover {
     content: '✓';
     position: absolute;
     left: 0;
-    color: #00ffe1;
+    color: #0077b5;
     font-weight: bold;
 }
 
@@ -1714,7 +1714,7 @@ header nav .head-navlinks .price-offer:hover {
 }
 
 .footer-bottom a {
-    color: #00ffe1;
+    color: #0077b5;
     text-decoration: none;
 }
 
@@ -1747,12 +1747,12 @@ header nav .head-navlinks .price-offer:hover {
     transition: 0.3s;
 }
 
-.social-button.mail {
-    background-color: #fff;
+.social-buttons a {
+    background-color: #0077b5;
 }
 
 .social-button.mail svg {
-    fill: #FF0000;
+    fill: #fff;
 }
 
 .social-button:hover {
@@ -1763,10 +1763,6 @@ header nav .head-navlinks .price-offer:hover {
 .social-buttons svg {
     transition: 0.3s;
     height: 20px;
-}
-
-.facebook {
-    background-color: #3b5998;
 }
 
 .facebook svg {
@@ -1866,6 +1862,15 @@ header nav .head-navlinks .price-offer:hover {
         border: 1px solid #656d78;
         border-radius: 100%;
         transition: background-color .15s ease, border-color .15s ease, box-shadow .15s ease, transform .15s ease, -webkit-box-shadow .15s ease, -webkit-transform .15s ease, -moz-transform .15s ease, -o-transform .15s ease;
+    }
+
+    .social-icon i {
+        font-size: 28px;
+        color: #FFF;
+    }
+
+    .social-icon i.fa-telegram {
+        margin-top: 3px;
     }
 
     .social-icon a img {
